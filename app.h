@@ -1,9 +1,8 @@
 #pragma once
-#include "app.cpp"
 #include <iostream>
 #include <string>
 #include <vector>
-
+using namespace std;
 struct staff
 {
     string staff_id;
