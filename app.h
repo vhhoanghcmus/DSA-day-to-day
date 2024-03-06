@@ -18,13 +18,14 @@ struct staff
     double income;
 };
 
-vector<staff>& removed_employeer_to_list(vector<staff>& list);
-vector<staff>& add_employeer_to_list(vector<staff>& list);
-void show_salary_of_staff(staff employeer);
+vector<staff>& removed_employee_to_list(vector<staff>& list);
+vector<staff>& add_employee_to_list(vector<staff>& list);
+void show_salary_of_staff(staff employee);
 void show_detail(vector<staff> list, int index);
-void show_detail(staff employeer);
+void show_detail(staff employee);
 void choice_option_1();
 void Choice_table();
 staff creater_staff();
-double net_salary(staff employeer);
+double net_salary(staff employee);
 int search(vector<staff> list);
+vector<staff>& sorting( vector<staff>& LIST);
