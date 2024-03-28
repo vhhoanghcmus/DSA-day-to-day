@@ -1,6 +1,5 @@
 #pragma once
-#include <bits/stdc++.h> 
-
+#include <iostream>
 void heapify(int arr[], int N, int i)
 {
  

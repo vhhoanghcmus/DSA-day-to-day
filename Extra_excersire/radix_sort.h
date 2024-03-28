@@ -1,5 +1,5 @@
 #pragma once
-#include <bits/stdc++.h> 
+
 
 int getMax(int arr[], int n)
 {

@@ -1,5 +1,7 @@
 #pragma once
-#include <bits/stdc++.h> 
+#include <iostream>
+
+
 
 void InterchangeSort( int a[], int N) {
     int i, j;

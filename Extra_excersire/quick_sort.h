@@ -1,6 +1,6 @@
 #pragma once
-#include <bits/stdc++.h> 
- 
+#include <iostream>
+
 int partition(int arr[], int start, int end)
 {
  

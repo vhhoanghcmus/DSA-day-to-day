@@ -1,5 +1,4 @@
 #pragma once
-#include <bits/stdc++.h> 
 
 void bubble_sort(int arr[], int n) {
     for(int i = 0; i < n; i++) {
