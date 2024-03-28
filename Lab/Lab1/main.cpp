@@ -5,6 +5,7 @@
 #include <string>
 using namespace std;
 
+//Initial struct studen
 struct student
 {
     string name;
@@ -19,6 +20,7 @@ void show(vector<student> L) {
     }
 }
 
+// Initial data student elements
 student initStudentData(){
     student student_staff;
     cout << "Nhap ten sinh vien" << endl;
@@ -34,6 +36,8 @@ student initStudentData(){
     cin >> student_staff.GPA;
     return student_staff;
 }
+
+// Selection Sort
 void sortStudentList(vector<student> &L) {
     int i, j, n = L.size(); 
     int min_idx;
@@ -58,6 +62,7 @@ void sortStudentList(vector<student> &L) {
     show(L);
 }
 
+// Search with soldier
 void search(vector<student> L) {
     unsigned int IDstudent;
     cout << "Nhap ma so sinh vien can tim: ";
@@ -75,6 +80,7 @@ void search(vector<student> L) {
 
 }
 
+// Write file
 void Write_file(vector<student> L){
     ofstream outfile;  
     outfile.open("data.txt");
@@ -85,6 +91,7 @@ void Write_file(vector<student> L){
     outfile.close();   
 }
 
+//Read file
 void read_file(){
     static vector<student> StudentList;
     ifstream infile;
@@ -117,6 +124,7 @@ void read_file(){
         sortStudentList(StudentList);
 }
 
+// Initialize StudentList
 void initStudentList(vector<student> &L) {
     static int n;
     cout << "Nhap so luong sinh vien: ";
