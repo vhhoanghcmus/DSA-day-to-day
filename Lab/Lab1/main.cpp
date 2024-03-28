@@ -114,12 +114,20 @@ void read_file(){
         sortStudentList(StudentList);
 }
 
-
+void initStudentList(vector<student> &L) {
+    static int n;
+    cout << "Nhap so luong sinh vien: ";
+    cin >> n;
+    for( int i = 0; i < n; i++) {
+        L.push_back(initStudentData());
+    }
+}
 
 
 int main() {
     vector<student> List_student;
     initStudentList(List_student);
+    Write_file(List_student);
     read_file();
     return 1;
 }
