@@ -28,9 +28,9 @@ student initStudentData(){
     //     cout << "Ten qua dai!! Vui long nhap lai" << endl;
     //     cin >> student.name;
     // }
-    cout << "Nhap ma so sinh vien" << endl;
+    cout << "Nhap ma so sinh vien: ";
     cin >> student_staff.studentID;
-    cout << "Nhap diem trung binh" << endl;
+    cout << "Nhap diem trung binh: ";
     cin >> student_staff.GPA;
     return student_staff;
 }
@@ -62,13 +62,16 @@ void search(vector<student> L) {
     unsigned int IDstudent;
     cout << "Nhap ma so sinh vien can tim: ";
     cin >> IDstudent;
+    int soldier = 0;
     for( int i = 0; i < L.size(); i++) {
-        if(L[i].studentID = IDstudent) {
-        cout << L[i].studentID << " ";
-        cout << L[i].GPA <<  " ";
-        cout << L[i].name << endl;
-        }
+        soldier = i;
+        if(L[i].studentID = IDstudent){
+            break;
+        } 
     }
+        cout << L[soldier].studentID << " ";
+        cout << L[soldier].GPA <<  " ";
+        cout << L[soldier].name << endl;
 
 }
 
@@ -119,6 +122,7 @@ void initStudentList(vector<student> &L) {
     cout << "Nhap so luong sinh vien: ";
     cin >> n;
     for( int i = 0; i < n; i++) {
+        cout << "Sinh vien thu " << i + 1 << endl;
         L.push_back(initStudentData());
     }
 }
@@ -129,5 +133,6 @@ int main() {
     initStudentList(List_student);
     Write_file(List_student);
     read_file();
+    search(List_student);
     return 1;
 }
