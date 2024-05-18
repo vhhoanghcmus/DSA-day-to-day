@@ -1,0 +1,12 @@
+Heap sort là một thuật toán sắp xếp dựa trên so sánh, dựa trên cấu trúc dữ liệu Binary Heap.
+Nó tương tự với thuật toán selection sort, trong đó chúng ta tìm phần tử lớn nhất và đặt phần
+tử lớn nhất vào cuối danh sách. Chúng ta lặp lại quá trình này cho các phần tử còn lại.
+
+Để thực hiện heap sort theo hướng min heap (sắp xếp tăng dần), chúng ta cần tuân theo các bước sau:
+
+Xây dựng min heap: Chuyển danh sách đầu vào thành một min heap. Điều này đảm bảo rằng phần tử lớn 
+nhất trong danh sách được lưu trữ tại gốc của heap.
+Sắp xếp min heap: Lặp qua các phần tử của heap và thực hiện việc sắp xếp. Sau mỗi lần lặp, chúng 
+ta đổi chỗ phần tử gốc (phần tử nhỏ nhất) với phần tử cuối cùng của heap và giảm kích thước của heap đi 1.
+Kết quả: Sau khi hoàn thành, danh sách sẽ được sắp xếp theo thứ tự tăng dần.
+Ví dụ về 1 heap: Thuật toán dijkstra

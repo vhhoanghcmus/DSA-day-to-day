@@ -1,3 +1,4 @@
+#include <algorithm>
 void naturalMerge(int arr[], int temp[], int left, int mid, int right) {
     int i = left;
     int j = mid + 1;
